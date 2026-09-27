@@ -63,19 +63,3 @@ A Godot 4 editor plugin that converts image sequences into texture keyframe anim
 4. 通过拖拽、精灵表切片或批量添加导入图片。
 5. 按需设置 FPS 与覆盖开关。
 6. 点击 **✅ 生成关键帧**，自动创建 texture 轨道。
-
----
-
-## License
-
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
-
-本项目基于 MIT 协议开源，详见 [LICENSE](LICENSE)。
-
----
-
-## Contributing
-
-Issues and pull requests are welcome.
-
-欢迎提交 Issue 与 Pull Request。
