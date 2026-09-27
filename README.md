@@ -1,37 +1,81 @@
-English Version
-Batch Sprite Keyframe is a Godot editor plugin that converts image sequences into texture keyframe animations for Sprite2D nodes. Integrated into the AnimationPlayer inspector, it activates whenever an AnimationPlayer is selected.
+# Batch Sprite Keyframe
 
-Key features:
+A Godot 4 editor plugin that converts image sequences into texture keyframe animations for `Sprite2D` nodes.
 
-Drag & drop import: Drop multiple images from the FileSystem into the list
+一款 Godot 4 编辑器插件，用于将图片序列快速转换为 `Sprite2D` 的 texture 动画轨道。
 
-Sprite sheet slicing: Visual slicer with row/column or pixel-size modes, box selection, and Ctrl+scroll zoom
+---
 
-Batch add: Select multiple files at once, imported in natural filename order
+## Features
 
-One-click generation: Inserts texture keyframes on the target Sprite2D using the animation's current FPS
+- **Drag & drop import** — Drop multiple images from the FileSystem into the list.
+- **Sprite sheet slicing** — Visual slicer with row/column or pixel-size modes, box selection, and Ctrl+scroll zoom.
+- **Batch add** — Select multiple files at once, imported in natural filename order.
+- **One-click generation** — Inserts texture keyframes on the target `Sprite2D` using the animation's current FPS.
+- **Overwrite toggle** — Optionally overwrite existing tracks; preference is persisted across sessions.
+- **Target binding** — Assign `Sprite2D` nodes via scene tree drag or picker, remembered per session.
 
-Overwrite toggle: Optionally overwrite existing tracks; preference is persisted
+---
 
-Target binding: Assign Sprite2D nodes via scene tree drag or picker, remembered per session
+## 功能说明
 
-Designed for pixel art and 2D animation workflows, eliminating repetitive manual keyframing.
+- **拖拽导入** —— 从文件系统拖入多张图片，自动追加到列表中。
+- **精灵表切片** —— 提供可视化切片窗口，支持按行列或像素尺寸切割，支持框选、Ctrl + 滚轮缩放。
+- **批量添加** —— 一次选取多张图片，按文件名自然排序导入。
+- **一键生成** —— 依据当前动画的 FPS，在指定 `Sprite2D` 上批量插入 texture 关键帧。
+- **覆盖控制** —— 可开关是否覆盖已有轨道，设置持久化保存。
+- **目标绑定** —— 支持从场景树拖拽或选择器指定 `Sprite2D`，绑定关系按会话记忆。
 
-中文版
-Batch Sprite Keyframe 是一款 Godot 编辑器插件，用于将图片序列快速转换为 Sprite2D 的 texture 动画轨道。插件集成于 AnimationPlayer 检查器，选中节点即可使用。
+---
 
-主要功能：
+## Installation
 
-拖拽导入：从文件系统拖入多张图片，自动追加至列表
+1. Download or clone this repository.
+2. Copy the `addons/batch_sprite_keyframe/` folder into your project's `addons/` directory.
+3. Open **Project → Project Settings → Plugins** and enable **Batch Sprite Keyframe**.
 
-精灵表切片：打开可视化切片窗口，按行列或像素尺寸切割精灵表，支持框选、Ctrl 缩放预览
+---
 
-批量添加：一次选取多张图片，按文件名自然排序导入
+## 安装方法
 
-一键生成：依据当前动画的 FPS，在指定 Sprite2D 上批量插入 texture 关键帧
+1. 下载或克隆本仓库。
+2. 将 `addons/batch_sprite_keyframe/` 文件夹复制到项目的 `addons/` 目录下。
+3. 打开 **项目 → 项目设置 → 插件**，启用 **Batch Sprite Keyframe**。
 
-覆盖控制：可开关是否覆盖已有轨道，设置持久化保存
+---
 
-目标绑定：支持从场景树拖拽 Sprite2D 节点，绑定关系按会话记忆
+## Usage
 
-适用于像素游戏与 2D 动画工作流，减少手动打帧的重复劳动。
+1. Select an `AnimationPlayer` node in the scene tree.
+2. In the inspector, locate the **SpriteKeyFrame** section.
+3. Choose the target `Sprite2D` (drag from scene tree or click **选择**).
+4. Import images via drag & drop, the sheet slicer, or batch add.
+5. Set the FPS and toggle the overwrite option as needed.
+6. Click **✅ 生成关键帧** to create the texture track.
+
+---
+
+## 使用方法
+
+1. 在场景树中选中一个 `AnimationPlayer` 节点。
+2. 在检查器中找到 **SpriteKeyFrame** 区域。
+3. 指定目标 `Sprite2D`（可从场景树拖拽，或点击 **选择**）。
+4. 通过拖拽、精灵表切片或批量添加导入图片。
+5. 按需设置 FPS 与覆盖开关。
+6. 点击 **✅ 生成关键帧**，自动创建 texture 轨道。
+
+---
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
+本项目基于 MIT 协议开源，详见 [LICENSE](LICENSE)。
+
+---
+
+## Contributing
+
+Issues and pull requests are welcome.
+
+欢迎提交 Issue 与 Pull Request。
