@@ -66,6 +66,6 @@ A Godot 4 editor plugin that converts image sequences into texture keyframe anim
 
 ---
 
-## Detailed address
+## Address
 
 https://www.bilibili.com/video/BV1B3hq6EEUM
