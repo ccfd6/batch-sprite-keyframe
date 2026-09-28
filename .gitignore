@@ -1,0 +1,22 @@
+# Godot 4+ specific ignores
+.godot/
+
+# Godot-specific ignores
+.import/
+export.cfg
+export_presets.cfg
+
+# Imported translations
+*.translation
+
+# IDE and tool specific
+.vscode/
+.idea/
+*.swp
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Plugin runtime config (auto-generated)
+addons/batch_sprite_keyframe/ui/sheet_slicer.cfg
